@@ -1,0 +1,85 @@
+@font-face {
+  @font-face {
+    font-family: "Friz Quadrata Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Friz Quadrata Bold Italic"),
+      url("../font/friz-quadrata/friz-quadrata-bold-italic-os-5870341205e0f.ttf")
+        format("ttf");
+  }
+}
+
+.navbar_color {
+  background-color: #01539b !important;
+}
+.navbar_text {
+  color: white;
+  font-size: 35px;
+  font-family: "Friz Quadrata Bold Italic", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.visible {
+  display: inline;
+}
+
+.invisible {
+  display: none;
+}
+
+.retour{
+  font-weight: 500;
+  font-size: 20px;
+  color :#01539b
+}
+
+.card {
+  border: none !important;
+  box-shadow: 10px 5px 5px rgb(109, 109, 109);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: lightgray;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.circle.active {
+  background-color: #01539b;
+}
+
+.line {
+  width: 50px;
+  height: 4px;
+  background-color: lightgray;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.line.active {
+  background-color: #01539b;
+}

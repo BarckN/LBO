@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <title>Les Bords de l'Oise - LBO</title>
+  </head>
+  <body>
+    <nav class="navbar navbar_color mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logoF.png" alt="LBO" width="80" height="80" />
+        </a>
+        <p class="navbar_text">LBO</p>
+        <a class="navbar-brand" href="#">
+          <img src="images/logoH.png" alt="LBO" width="80" height="80" />
+        </a>
+      </div>
+    </nav>
+    <section class="pt-5">
+          <div class="container invisible" id="retourMenu">
+        <div class="row">
+            <div class="card-body"style="width: 18rem" id="retourBouton">
+              <p class="retour"> <- Retour à L'accueil</p>
+            </div>
+        </div>
+      </div>
+      <div class="container invisible" id="retourBurger">
+        <div class="row">
+            <div class="card-body"style="width: 18rem" id="retourBouton">
+              <p class="retour"> <- Retour à la sélection du burger</p>
+            </div>
+        </div>
+      </div>
+      <div class="container invisible" id="retourViande">
+        <div class="row">
+            <div class="card-body"style="width: 18rem" id="retourBouton">
+              <p class="retour"> <- Retour à la sélection de la viande</p>
+            </div>
+        </div>
+      </div>
+      <div class="container invisible" id="retourWrap">
+        <div class="row">
+            <div class="card-body"style="width: 18rem" id="retourBouton">
+              <p class="retour"> <- Retour à la sélection du wrap</p>
+            </div>
+        </div>
+      </div>
+      <div class="container invisible" id="retourAccompagnement">
+        <div class="row">
+            <div class="card-body"style="width: 18rem" id="retourBouton">
+              <p class="retour"> <- Retour à la sélection de l'accompagnement</p>
+            </div>
+        </div>
+      </div>
+      <div class="container invisible" id="retourBoisson">
+        <div class="row">
+            <div class="card-body"style="width: 18rem" id="retourBouton">
+              <p class="retour"> <- Retour à la sélection de la boisson</p>
+            </div>
+        </div>
+      </div>
+      <div class="container invisible " id="confirmation">
+        <div class="card mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text mb-3">Veuillez confirmer votre commande</p>
+            <button class="btn btn-primary mx-auto" id="boutonConf">CONFIRMER</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container invisible" id="retourDessert">
+        <div class=" justify-content-center mx-auto">
+            <div class="card-body"style="width: 18rem" id="retourBouton">
+              <p class="retour"> <- Retour à la sélection du dessert</p>
+            </div>
+        </div>
+      </div>
+
+  <div class="stepper container mb-5" id="stepper">
+    <div class="step">
+      <div class="circle" id="step1">1</div>
+      <div class="line" id="line1"></div>
+    </div>
+    <div class="step">
+      <div class="circle" id="step2">2</div>
+      <div class="line" id="line2"></div>
+    </div>
+    <div class="step">
+      <div class="circle" id="step3">3</div>
+      <div class="line" id="line3"></div>
+    </div>
+    <div class="step">
+      <div class="circle" id="step4">4</div>
+      <div class="line" id="line4"></div>
+    </div>
+    <div class="step">
+      <div class="circle" id="step5">5</div>
+    </div>
+  </div>
+      <div class="container" id="choix_menu">
+        <div class="row justify-content-evenly"> 
+          <div class="card col-5" style="width: 18rem" id="menuA">
+            <img
+              src="images/burger_boeuf.png"
+              class="card-img-top"
+              alt="Menu Burger"
+            />
+            <div class="card-body">
+              <p class="card-text">Menu A : Burger au choix</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="menuB">
+            <img
+              src="images/tenders.png"
+              class="card-img-top"
+              alt="Menu Viande"
+            />
+            <div class="card-body">
+              <p class="card-text">Menu B : Viande au choix</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="menuC">
+            <img
+              src="images/wrap_poulet.png"
+              class="card-img-top"
+              alt="Menu Wrap"
+            />
+            <div class="card-body">
+              <p class="card-text">Menu C : Wrap au choix</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu burger -->
+      <div class="container invisible"  id="choix_burger">
+        <div class="row justify-content-evenly">
+          <div class="card col-5" style="width: 18rem" id="BurgerSteak">
+            <img
+              src="images/burger_boeuf.png"
+              class="card-img-top"
+              alt="Burger Steak"
+            />
+            <div class="card-body">
+              <p class="card-text">Burger Steak Haché</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="BurgerPoulet">
+            <img
+              src="images/burger_poulet.png"
+              class="card-img-top"
+              alt="Burger Poulet"
+            />
+            <div class="card-body">
+              <p class="card-text">Burger Poulet</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="BurgerPoisson">
+            <img
+              src="images/burger_poisson.png"
+              class="card-img-top"
+              alt="Burger Poisson"
+            />
+            <div class="card-body">
+              <p class="card-text">Burger Poisson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Menu  Viande -->
+
+        <div class="container invisible" id="choix_viande">
+        <div class="row justify-content-evenly">
+          <div class="card col-5" style="width: 18rem" id="tenders">
+            <img
+              src="images/tenders.png"
+              class="card-img-top"
+              alt="Tenders"
+            />
+            <div class="card-body">
+              <p class="card-text">Tenders</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="nuggets">
+            <img
+              src="images/nuggets.png"
+              class="card-img-top"
+              alt="Nuggets"
+            />
+            <div class="card-body">
+              <p class="card-text">Nuggets</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="steak">
+            <img
+              src="images/steak.png"
+              class="card-img-top"
+              alt="Steak"
+            />
+            <div class="card-body">
+              <p class="card-text">Steak</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Menu Wrap -->
+        <div class="container invisible" id="choix_wrap">
+        <div class="row justify-content-evenly">
+          <div class="card col-7" style="width: 18rem" id="wrap_poulet">
+            <img
+              src="images/wrap_poulet.png"
+              class="card-img-top"
+              alt="Wrap Poulet"
+            />
+            <div class="card-body">
+              <p class="card-text">Wrap Poulet</p>
+            </div>
+          </div>
+          <div class="card col-7" style="width: 18rem" id="wrap_poisson">
+            <img
+              src="images/wrap_poisson.png"
+              class="card-img-top"
+              alt="Wrap Poisson"
+            />
+            <div class="card-body">
+              <p class="card-text">Wrap Poisson</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Accompagnements -->
+        <div class="container invisible" id="choix_accompagnement">
+        <div class="row justify-content-evenly">
+          <div class="card col-7" style="width: 18rem" id="frites">
+            <img
+              src="images/frites.png"
+              class="card-img-top"
+              alt="Frites"
+            />
+            <div class="card-body">
+              <p class="card-text">Frites</p>
+            </div>
+          </div>
+          <div class="card col-7" style="width: 18rem" id="salade">
+            <img
+              src="images/salade.png"
+              class="card-img-top"
+              alt="Salade"
+            />
+            <div class="card-body">
+              <p class="card-text">Salade</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Boissons -->
+      <div class="container invisible" id="choix_boisson">
+        
+        <div class="row justify-content-evenly">
+          <div class="card col-5" style="width: 18rem" id="coca">
+            <img
+              src="images/coca.png"
+              class="card-img-top"
+              alt="Coca"
+            />
+            <div class="card-body">
+              <p class="card-text">Coca-Cola</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="icedtea">
+            <img
+              src="images/icedtea.png"
+              class="card-img-top"
+              alt="Iced Tea"
+            />
+            <div class="card-body">
+              <p class="card-text">Iced Tea</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="eau">
+            <img
+              src="images/eau.png"
+              class="card-img-top"
+              alt="Eau"
+            />
+            <div class="card-body">
+              <p class="card-text">Eau</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Dessert -->
+
+      <div class="container invisible" id="choix_dessert">
+        <div class="row justify-content-evenly">
+          <div class="card col-5" style="width: 18rem" id="tiramisu">
+            <img
+              src="images/tiramisu.png"
+              class="card-img-top"
+              alt="Tiramisu"
+            />
+            <div class="card-body">
+              <p class="card-text">Tiramisu</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="milkshake">
+            <img
+              src="images/milkshake.png"
+              class="card-img-top"
+              alt="Milkshake"
+            />
+            <div class="card-body">
+              <p class="card-text">Milkshake</p>
+            </div>
+          </div>
+          <div class="card col-5" style="width: 18rem" id="yogurt">
+            <img
+              src="images/yogurt.png"
+              class="card-img-top"
+              alt="Yogurt"
+            />
+            <div class="card-body">
+              <p class="card-text">Yogurt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container invisible" id="reception">
+        <div class="row">
+          <div class="card mx-auto" style="width: 28rem;font-size: 30px;">
+            <div class="card-body ">
+              <p class="card-text" id="recu_commande"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" ></script>
+  </body>
+</html>
